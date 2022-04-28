@@ -3,7 +3,7 @@ name: Say hello #Siempre tiene q tener un nombre
 on:   #Tambien hay que tener evento
   push:   #Escucha push
     branches:  # En la rama
-      - main   # main. cuando se haga push en main se ejecuta
+      - devel   # main. cuando se haga push en main se ejecuta
 
 jobs:   # Que tiene q hacer
   hello_world:  # nombre trabajo
