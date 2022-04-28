@@ -1,16 +1,16 @@
-name: Say hello
+name: Say hello #Siempre tiene q tener un nombre
 
-on:
-  push:
-    branches:
-      - main
+on:   #Tambien hay que tener evento
+  push:   #Escucha push
+    branches:  # En la rama
+      - main   # main. cuando se haga push en main se ejecuta
 
-jobs:
-  hello_world:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Echo the message
-        run: |
+jobs:   # Que tiene q hacer
+  hello_world:  # nombre trabajo
+    runs-on: ubuntu-18.04   # SS.OO   no poner latest, mejor la versión
+    steps:   # que pasos vamos a dar
+      - name: Echo the message  # Nombre del paso
+        run: |    # La barra es como si estuviera en la misma linea
           echo "Hola midu!"
       - name: Dime la fecha
         run: date
